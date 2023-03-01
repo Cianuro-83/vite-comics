@@ -48,7 +48,26 @@ HTML
       </ul>
     </div>
   </div>
-  <div class="upfooter"></div>
+  <div class="up-footer"></div>
+  <div class="lower-footer">
+    <div class="container flex">
+      <button>sign up now</button>
+      <div class="follow flex">
+        <p class="follow-us">follow us</p>
+        <ul class="flex">
+          <li><img src="../../public/img/footer-facebook.png" alt="" /></li>
+          <li class="margin-rl">
+            <img src="../../public/img/footer-twitter.png" alt="" />
+          </li>
+          <li><img src="../../public/img/footer-youtube.png" alt="" /></li>
+          <li class="margin-rl">
+            <img src="../../public/img/footer-pinterest.png" alt="" />
+          </li>
+          <li><img src="../../public/img/footer-periscope.png" alt="" /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </template>
 
 <!-- **************************
@@ -82,11 +101,32 @@ STYLE
 .flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .margin-rl {
   margin: 0 30px;
 }
 li {
   cursor: pointer;
+}
+.lower-footer {
+  background-color: #303030;
+  button {
+    line-height: 2rem;
+    padding: 5px 10px;
+    background-color: #303030;
+    color: white;
+    text-transform: uppercase;
+    border-color: #0182f9;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .follow-us {
+    color: #0182f9;
+    font-size: 1.3rem;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
 }
 </style>
