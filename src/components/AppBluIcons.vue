@@ -48,19 +48,18 @@ HTML
       </ul>
     </div>
   </div>
-  <div class="upfooter"></div>
 </template>
 
 <!-- **************************
-JAVA SCRIPT
-************************** -->
+  JAVA SCRIPT
+  ************************** -->
 <script>
 export default {};
 </script>
 
 <!-- **************************
-STYLE
-************************** -->
+  STYLE
+  ************************** -->
 <style lang="scss" scoped>
 .card-box {
   background-color: #0182f9;
