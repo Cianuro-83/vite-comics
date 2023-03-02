@@ -5,15 +5,11 @@ HTML
   <div class="card-box">
     <div class="container">
       <ul class="flex">
-        <li class="card-item flex">
-          <img
-            src="../../public/img/buy-comics-digital-comics.png"
-            alt=""
-            class="thumb"
-          />
-          <p class="thumb-description">digital comics</p>
+        <li class="card-item flex" v-for="card in menu">
+          <img :src="card.img" alt="" class="thumb" />
+          <p class="thumb-description">{{ card.label }}</p>
         </li>
-        <li class="card-item flex margin-rl">
+        <!-- <li class="card-item flex margin-rl">
           <img
             src="../../public/img/buy-comics-merchandise.png"
             alt=""
@@ -44,7 +40,7 @@ HTML
             class="thumb svg"
           />
           <p class="thumb-description">dc power visa</p>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -54,7 +50,34 @@ HTML
   JAVA SCRIPT
   ************************** -->
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      menu: [
+        {
+          img: "../../public/img/buy-comics-digital-comics.png",
+          label: "digital comics",
+        },
+        {
+          img: "../../public/img/buy-comics-merchandise.png",
+          label: "dc merchandise",
+        },
+        {
+          img: "../../public/img/buy-comics-subscriptions.png",
+          label: "subscription",
+        },
+        {
+          img: "../../public/img/buy-comics-shop-locator.png",
+          label: "comic shop locator",
+        },
+        {
+          img: "../../public/img/buy-dc-power-visa.svg",
+          label: "dc power visa",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <!-- **************************
@@ -81,10 +104,9 @@ export default {};
 .flex {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.margin-rl {
-  margin: 0 30px;
-}
+
 li {
   cursor: pointer;
 }
