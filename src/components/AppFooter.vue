@@ -91,9 +91,9 @@ HTML
         </ul>
       </div>
     </div>
-    <div class="big-logo">
+    <!-- <div class="big-logo">
       <img src="../../public/img/dc-logo-bg.png" alt="" />
-    </div>
+    </div> -->
   </div>
   <!-- LOWER FOOTER -->
   <div class="lower-footer">

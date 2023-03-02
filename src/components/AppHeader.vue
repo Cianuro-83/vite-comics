@@ -21,9 +21,7 @@ HTML
     </div>
   </header>
   <main>
-    <figure>
-      <img src="../../public/img/jumbotron.jpg" alt="" />
-    </figure>
+    <figure></figure>
   </main>
 </template>
 
@@ -123,5 +121,13 @@ li {
       left: 0;
     }
   }
+}
+figure {
+  background-image: url("../../public/img/jumbotron.jpg");
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 </style>
