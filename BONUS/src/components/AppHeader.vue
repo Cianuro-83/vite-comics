@@ -9,8 +9,14 @@ HTML
       </div>
       <div class="nav">
         <ul class="flex">
-          <li>characters</li>
-          <li class="margin-around active">comics</li>
+          <li
+            v-for="(menu, i) in menuBar"
+            @click="selezionaMenuAttivo(i)"
+            :class="this.currentMenu === i ? `active` : ``"
+          >
+            {{ menu.label }}
+          </li>
+          <!-- <li class="margin-around">comics</li>
           <li>movies</li>
           <li class="margin-around">tv</li>
           <li>games</li>
@@ -18,7 +24,7 @@ HTML
           <li>video</li>
           <li class="margin-around">fans</li>
           <li>news</li>
-          <li class="margin-left">shop</li>
+          <li class="margin-left">shop</li> -->
         </ul>
       </div>
     </div>
@@ -29,7 +35,50 @@ HTML
 JAVA SCRIPT
 ************************** -->
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      menuBar: [
+        {
+          label: "characters",
+        },
+        {
+          label: "comics",
+        },
+        {
+          label: "movies",
+        },
+        {
+          label: "tv",
+        },
+        {
+          label: "games",
+        },
+        {
+          label: "collectibles",
+        },
+        {
+          label: "video",
+        },
+        {
+          label: "fans",
+        },
+        {
+          label: "news",
+        },
+        {
+          label: "shop",
+        },
+      ],
+      currentMenu: 0,
+    };
+  },
+  methods: {
+    selezionaMenuAttivo(currentIndex) {
+      this.currentMenu = currentIndex;
+    },
+  },
+};
 </script>
 
 <!-- **************************
@@ -57,16 +106,26 @@ STYLE
 ul {
   text-transform: uppercase;
   font-weight: bold;
-  .margin-around {
-    margin: 0 10px;
-  }
-  .margin-left {
-    margin-left: 10px;
-  }
 }
-li.active,
-li:hover {
-  color: #0182f9;
-  cursor: pointer;
+
+li {
+  position: relative;
+  margin-left: 10px;
+  &.active,
+  &:hover {
+    color: #0182f9;
+    cursor: pointer;
+    &::after {
+      display: inline-block;
+      content: "";
+      display: inline-block;
+      height: 4px;
+      width: 100%;
+      background-color: #0182f9;
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+    }
+  }
 }
 </style>
