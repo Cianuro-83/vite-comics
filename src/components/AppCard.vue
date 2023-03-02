@@ -1,15 +1,22 @@
 <!-- **************************
 HTML
 ************************** -->
-<template></template>
+<template>
+  <!-- <li class="card">
+    <img :src="thumb.comics" alt="" />
+  </li> -->
+</template>
 
 <!-- **************************
 JAVA SCRIPT
 ************************** -->
 <script>
 export default {
-  data() {
-    return {};
+  props: {
+    comics: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
