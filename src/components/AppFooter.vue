@@ -187,7 +187,6 @@ li {
   background-image: url(../../public/img/footer-bg.jpg);
   .container {
     color: white;
-    position: relative;
   }
   .big-logo {
     position: absolute;

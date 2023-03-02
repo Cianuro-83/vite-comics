@@ -16,19 +16,15 @@ HTML
           >
             {{ menu.label }}
           </li>
-          <!-- <li class="margin-around">comics</li>
-          <li>movies</li>
-          <li class="margin-around">tv</li>
-          <li>games</li>
-          <li class="margin-around">collectibles</li>
-          <li>video</li>
-          <li class="margin-around">fans</li>
-          <li>news</li>
-          <li class="margin-left">shop</li> -->
         </ul>
       </div>
     </div>
   </header>
+  <main>
+    <figure>
+      <img src="../../public/img/jumbotron.jpg" alt="" />
+    </figure>
+  </main>
 </template>
 
 <!-- **************************
