@@ -3,7 +3,10 @@ HTML
 ************************** -->
 <template>
   <main>
-    <div class="container">--\\ Content goes here //--</div>
+    <figure>
+      <img class="jumbotron" src="../../public/img/jumbotron.jpg" alt="" />
+    </figure>
+    <div class="container">--\\ Content goes here // e3dwedwe d2w3q--</div>
   </main>
 </template>
 
@@ -11,7 +14,12 @@ HTML
 JAVA SCRIPT
 ************************** -->
 <script>
-export default {};
+import AppHero from "./Apphero.vue";
+export default {
+  components: {
+    AppHero,
+  },
+};
 </script>
 
 <!-- **************************
@@ -28,5 +36,18 @@ main {
   font-size: 24px;
   font-weight: bold;
   padding-top: 35px;
+}
+figure {
+  height: 10px;
+}
+// .jumbotron {
+//   width: 100%;
+//   height: 100px;
+// }
+figure {
+  border: 2px solid red;
+  width: 100%;
+  height: 300px;
+  background-color: white;
 }
 </style>

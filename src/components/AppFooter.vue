@@ -160,7 +160,6 @@ STYLE
   background-color: #0182f9;
   color: white;
   text-transform: uppercase;
-  z-index: 100;
 }
 .container {
   padding: 30px 0;
@@ -218,7 +217,6 @@ li {
 // LOWER FOOTER
 .lower-footer {
   background-color: #303030;
-  z-index: 99;
   position: relative;
   button {
     line-height: 2rem;
