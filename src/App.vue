@@ -7,6 +7,7 @@ JAVASCRIPT
 // IMPORT
 // **************************
 import AppHeader from "./components/AppHeader.vue";
+import AppContent from "./components/AppContent.vue";
 import AppFooter from "./components/AppFooter.vue";
 //********************
 // EXPORT
@@ -14,6 +15,7 @@ import AppFooter from "./components/AppFooter.vue";
 export default {
   components: {
     AppHeader,
+    AppContent,
     AppFooter,
   },
 };
@@ -24,6 +26,7 @@ HTML
 ************************** -->
 <template>
   <AppHeader />
+  <AppContent />
   <AppFooter />
 </template>
 

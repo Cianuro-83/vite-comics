@@ -110,7 +110,9 @@ HTML
           <li class="margin-rl">
             <img src="../../public/img/footer-pinterest.png" alt="" />
           </li>
-          <li><img src="../../public/img/footer-periscope.png" alt="" /></li>
+          <li class="social">
+            <img src="../../public/img/footer-periscope.png" alt="" />
+          </li>
         </ul>
       </div>
     </div>
@@ -233,6 +235,12 @@ li {
     margin-right: 30px;
     text-transform: uppercase;
     font-weight: 700;
+  }
+  li {
+    padding: 0 10px;
+  }
+  .social {
+    padding-right: 0;
   }
 }
 </style>
