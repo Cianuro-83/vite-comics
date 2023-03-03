@@ -7,44 +7,16 @@ HTML
       <button class="button-top">current series</button>
       <div class="locandine">
         <ul class="grid">
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-            <h3>action comics</h3>
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
-          <li>
-            <img src="../../public/img/dc-comics1.jpg" alt="" />
-          </li>
+          <AppCard
+            class="prova"
+            v-for="el in comics"
+            :key="comics.series"
+            :comics="el"
+          />
         </ul>
+        <div class="flex">
+          <button class="button-bottom">load more</button>
+        </div>
       </div>
     </div>
   </main>
@@ -170,10 +142,10 @@ main {
 .grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   //   grid-template-columns: 6, 1fr;
   li {
-    width: calc(100% / 6 - 10px * 5 / 6);
-    gap: 10px;
+    width: calc(100% / 6 - 20px * 5 / 6);
     margin-bottom: 20px;
     cursor: pointer;
   }
@@ -186,5 +158,30 @@ main {
     font-size: 10px;
     margin-top: 10px;
   }
+}
+.prova {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.prova:hover {
+  filter: drop-shadow(0 0 2em #03f032aa);
+}
+.button-bottom {
+  line-height: 1.5rem;
+  background-color: #0182f9;
+  border-color: #0182f9;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
 }
 </style>

@@ -46,49 +46,52 @@ HTML
   </div>
   <!-- UP FOOTER -->
   <div class="up-footer">
-    <div class="container flex-up-footer">
-      <div class="col">
-        <h3 class="list-title">dc comics</h3>
-        <ul>
-          <li class="list-items">Characters</li>
-          <li class="list-items">Comics</li>
-          <li class="list-items">Movies</li>
-          <li class="list-items">Tv</li>
-          <li class="list-items">Games</li>
-          <li class="list-items">Videos</li>
-          <li class="list-items">News</li>
-        </ul>
-        <h3 class="list-title shop">shop</h3>
-        <ul>
-          <li class="list-items">Shop DC</li>
-          <li class="list-items">Shop DC Collectibles</li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3 class="list-title">dc comics</h3>
-        <ul>
-          <li class="list-items">Terms Of Use</li>
-          <li class="list-items">Privacy policy (New)</li>
-          <li class="list-items">Ad Choices</li>
-          <li class="list-items">Advertising</li>
-          <li class="list-items">Jobs</li>
-          <li class="list-items">Subscriptions</li>
-          <li class="list-items">Talent Workshops</li>
-          <li class="list-items">CPSC Certificates</li>
-          <li class="list-items">Ratings</li>
-          <li class="list-items">Shop Help</li>
-          <li class="list-items">Contact Us</li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3 class="list-title">sites</h3>
-        <ul>
-          <li class="list-items">DC</li>
-          <li class="list-items">MAD Magazine</li>
-          <li class="list-items">DC Kids</li>
-          <li class="list-items">DC Universe</li>
-          <li class="list-items">DC Power Visa</li>
-        </ul>
+    <div class="container">
+      <div class="prova flex-up-footer">
+        <div class="col">
+          <h3 class="list-title">dc comics</h3>
+          <ul>
+            <li class="list-items">Characters</li>
+            <li class="list-items">Comics</li>
+            <li class="list-items">Movies</li>
+            <li class="list-items">Tv</li>
+            <li class="list-items">Games</li>
+            <li class="list-items">Videos</li>
+            <li class="list-items">News</li>
+          </ul>
+          <h3 class="list-title shop">shop</h3>
+          <ul>
+            <li class="list-items">Shop DC</li>
+            <li class="list-items">Shop DC Collectibles</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="list-title">dc comics</h3>
+          <ul>
+            <li class="list-items">Terms Of Use</li>
+            <li class="list-items">Privacy policy (New)</li>
+            <li class="list-items">Ad Choices</li>
+            <li class="list-items">Advertising</li>
+            <li class="list-items">Jobs</li>
+            <li class="list-items">Subscriptions</li>
+            <li class="list-items">Talent Workshops</li>
+            <li class="list-items">CPSC Certificates</li>
+            <li class="list-items">Ratings</li>
+            <li class="list-items">Shop Help</li>
+            <li class="list-items">Contact Us</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3 class="list-title">sites</h3>
+          <ul>
+            <li class="list-items">DC</li>
+            <li class="list-items">MAD Magazine</li>
+            <li class="list-items">DC Kids</li>
+            <li class="list-items">DC Universe</li>
+            <li class="list-items">DC Power Visa</li>
+          </ul>
+        </div>
+        <img class="logo-grande" src="../../public/img/dc-logo-bg.png" alt="" />
       </div>
     </div>
     <!-- <div class="big-logo">
@@ -162,6 +165,7 @@ STYLE
   background-color: #0182f9;
   color: white;
   text-transform: uppercase;
+  z-index: 999;
 }
 .container {
   padding: 30px 0;
@@ -171,6 +175,7 @@ STYLE
   width: 25px;
   display: block;
   margin-right: 15px;
+  z-index: 999;
 }
 .svg {
   width: 40px;
@@ -190,12 +195,7 @@ li {
   .container {
     color: white;
   }
-  .big-logo {
-    position: absolute;
-    top: 200px;
-    right: 100px;
-    width: 500px;
-  }
+
   .flex-up-footer {
     display: flex;
     gap: 30px;
@@ -241,6 +241,16 @@ li {
   }
   .social {
     padding-right: 0;
+  }
+}
+.prova {
+  // border: 5px solid greenyellow;
+  position: relative;
+  .logo-grande {
+    position: absolute;
+    width: 500px;
+    left: 400px;
+    bottom: -110px;
   }
 }
 </style>

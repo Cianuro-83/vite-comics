@@ -2,9 +2,10 @@
 HTML
 ************************** -->
 <template>
-  <!-- <li class="card">
-    <img :src="thumb.comics" alt="" />
-  </li> -->
+  <li>
+    <img :src="comics.thumb" alt="" />
+    <h3>{{ comics.series }}</h3>
+  </li>
 </template>
 
 <!-- **************************
